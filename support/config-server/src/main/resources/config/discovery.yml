@@ -1,0 +1,10 @@
+
+eureka:
+  instance:
+    hostname: localhost
+  client:  # Not a client, don't register with yourself
+    registerWithEureka: false
+    fetchRegistry: false
+
+server:
+  port: 2222   # HTTP (Tomcat) port

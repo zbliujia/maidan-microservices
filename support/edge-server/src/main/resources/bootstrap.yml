@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: edge
+  cloud:
+    config:
+      uri: http://localhost:1111

@@ -1,0 +1,19 @@
+#endpoints:
+#  restart:
+#    enabled: true
+#  shutdown:
+#    enabled: true
+#  health:
+#    sensitive: false
+#
+#zuul:
+#  ignoredServices: "*"
+#  routes:
+#    #orders: /orders/**
+#    wechat: /wechat/**
+#
+#
+zuul:
+  ignoredServices: "*"
+  routes:
+    wechat: /api/**

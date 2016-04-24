@@ -1,0 +1,13 @@
+server:
+  port: 1111   # HTTP (Tomcat) port
+
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+#        git:
+#          uri: https://github.com/zbliujia/config-repo

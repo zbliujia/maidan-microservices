@@ -1,0 +1,14 @@
+# Spring properties
+spring:
+  freemarker:
+    enabled: false     # Ignore Eureka dashboard FreeMarker templates
+  http:
+    encoding.charset: UTF-8
+    encoding.enable: true
+    encoding.force: true
+
+logging:
+  file: wechat_server.log
+# HTTP Server
+server:
+  port: 3333   # HTTP (Tomcat) port

@@ -1,0 +1,14 @@
+
+include 'config-server'
+project(':config-server').projectDir = new File('./support/config-server')
+
+include 'discovery-server'
+project(':discovery-server').projectDir = new File('./support/discovery-server')
+
+include 'edge-server'
+project(':edge-server').projectDir = new File('./support/edge-server')
+
+include 'wechat-server'
+project(':wechat-server').projectDir = new File('./api/wechat-server')
+
+rootProject.name = 'maidan-microservices'

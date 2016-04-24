@@ -1,0 +1,6 @@
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:5555/eureka/
+
