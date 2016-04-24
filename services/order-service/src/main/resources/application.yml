@@ -31,4 +31,4 @@ eureka:
 
 # HTTP Server
 server:
-  port: 9000   # HTTP (Tomcat) port
+  port: 0   # HTTP (Tomcat) port
