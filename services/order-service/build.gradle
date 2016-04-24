@@ -1,0 +1,10 @@
+
+dependencies {
+    compile("org.springframework.cloud:spring-cloud-starter:${springCloudVersion}")
+    compile("org.springframework.cloud:spring-cloud-starter-eureka:${springCloudVersion}")
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-jdbc")
+    compile("mysql:mysql-connector-java:6.0.2")
+    compile("com.alibaba:druid:1.0.18")
+    compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1")
+}

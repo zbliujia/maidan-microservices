@@ -1,10 +1,4 @@
 
-include 'model'
-project(':model').projectDir = new File('./common/model')
-
-include 'utils'
-project(':utils').projectDir = new File('./common/utils')
-
 include 'config-server'
 project(':config-server').projectDir = new File('./support/config-server')
 
@@ -13,6 +7,15 @@ project(':discovery-server').projectDir = new File('./support/discovery-server')
 
 include 'edge-server'
 project(':edge-server').projectDir = new File('./support/edge-server')
+
+include 'model'
+project(':model').projectDir = new File('./common/model')
+
+include 'utils'
+project(':utils').projectDir = new File('./common/utils')
+
+include 'order-service'
+project(':order-service').projectDir = new File('./services/order-service')
 
 include 'wechat-server'
 project(':wechat-server').projectDir = new File('./api/wechat-server')
