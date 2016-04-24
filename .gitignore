@@ -22,5 +22,5 @@ out
 gradle
 build
 
-.log
+*.log
 
