@@ -1,4 +1,10 @@
 
+include 'model'
+project(':model').projectDir = new File('./common/model')
+
+include 'utils'
+project(':utils').projectDir = new File('./common/utils')
+
 include 'config-server'
 project(':config-server').projectDir = new File('./support/config-server')
 

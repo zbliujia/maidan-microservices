@@ -15,6 +15,7 @@ subprojects {
     ext {
         springCloudVersion = '1.0.6.RELEASE'
         springConfigVersion = '1.0.4.RELEASE'
+        springVersion = '4.2.5.RELEASE'
     }
 
     apply plugin: 'java'

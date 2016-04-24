@@ -1,0 +1,7 @@
+
+bootRepackage.enabled = false;
+bootRun.enabled = false;
+
+dependencies {
+    compile("org.springframework:spring-context:${springVersion}")
+}
