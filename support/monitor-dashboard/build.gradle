@@ -1,0 +1,8 @@
+
+dependencies {
+    //compile("org.springframework.cloud:spring-cloud-starter-hystrix:${springCloudVersion}")
+    //compile("org.springframework.cloud:spring-cloud-starter-hystrix-dashboard:${springCloudVersion}")
+    compile('org.springframework.cloud:spring-cloud-starter-hystrix-dashboard:1.0.0.RELEASE')
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+}

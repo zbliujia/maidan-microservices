@@ -1,0 +1,16 @@
+
+info:
+  component: Turbine
+
+server:
+  port: 8989
+
+management:
+  port: 8990
+
+eureka:
+    instance:
+      leaseRenewalIntervalInSeconds: 10
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:5555/eureka/

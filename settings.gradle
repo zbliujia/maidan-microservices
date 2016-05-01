@@ -8,6 +8,15 @@ project(':discovery-server').projectDir = new File('./support/discovery-server')
 include 'edge-server'
 project(':edge-server').projectDir = new File('./support/edge-server')
 
+include 'edge-server'
+project(':edge-server').projectDir = new File('./support/edge-server')
+
+include 'turbine-server'
+project(':turbine-server').projectDir = new File('./support/turbine-server')
+
+include 'monitor-dashboard'
+project(':monitor-dashboard').projectDir = new File('./support/monitor-dashboard')
+
 include 'model'
 project(':model').projectDir = new File('./common/model')
 
