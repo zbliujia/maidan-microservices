@@ -1,6 +1,10 @@
-
 eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    metadataMap:
+#必须要有这个才可以建立多个instance 要不就覆盖掉了
+      instanceId: ${spring.application.name}:${random.value}
   client:
+    registryFetchIntervalSeconds: 5
     serviceUrl:
       defaultZone: http://localhost:5555/eureka/
-

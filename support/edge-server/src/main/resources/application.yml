@@ -17,3 +17,8 @@ zuul:
   ignoredServices: "*"
   routes:
     wechat: /api/**
+
+# 没有这个无法输出出来
+logging:
+  level: debug
+

@@ -11,4 +11,4 @@ logging:
   file: wechat_server.log
 # HTTP Server
 server:
-  port: 3333   # HTTP (Tomcat) port
+  port: 0   # HTTP (Tomcat) port

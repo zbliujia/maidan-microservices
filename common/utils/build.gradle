@@ -4,4 +4,5 @@ bootRun.enabled = false;
 
 dependencies {
     compile("org.springframework:spring-context:${springVersion}")
+    compile("org.apache.httpcomponents:httpclient:4.5")
 }
