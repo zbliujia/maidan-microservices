@@ -47,6 +47,7 @@ public class SurgicalDebugFilter extends ZuulFilter {
 
 	@Override
 	public Object run() {
+
 		logger.info("-------------SurgicalDebugFilter");
 		try {
 			//String json = restTemplate.getForObject(eurekaBaseUrl+"/apps/wechat",String.class);

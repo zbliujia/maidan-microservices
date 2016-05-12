@@ -44,6 +44,7 @@ public class Example {
 	    map.put("wechat","123");
 		int port = ((TomcatEmbeddedServletContainer)((AnnotationConfigEmbeddedWebApplicationContext)applicationContext).getEmbeddedServletContainer()).getPort();
 		map.put("serverPort",port+"");
+		map.put("UTF8","减肥");
 	    return map;
     }
 

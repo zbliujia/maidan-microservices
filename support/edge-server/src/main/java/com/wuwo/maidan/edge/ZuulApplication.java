@@ -28,5 +28,10 @@ public class ZuulApplication {
 //	public SurgicalDebugFilter surgicalDebugFilter() {
 //		return new SurgicalDebugFilter();
 //	}
+//
+//	@Bean
+//	public StaticResponseFilter staticResponseFilter() {
+//		return new StaticResponseFilter();
+//	}
 
 }
