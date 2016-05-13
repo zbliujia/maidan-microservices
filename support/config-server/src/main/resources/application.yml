@@ -8,6 +8,6 @@ spring:
     config:
       server:
         native:
-          search-locations: classpath:/config
+          search-locations: file:/Users/jiedaibao/Desktop/maidanla-config
 #        git:
 #          uri: https://github.com/zbliujia/config-repo

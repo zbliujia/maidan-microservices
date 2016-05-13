@@ -7,7 +7,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletResponse;
-import java.util.List;
 
 @Component
 public class StaticResponseFilter extends ZuulFilter {

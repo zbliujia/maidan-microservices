@@ -1,5 +1,6 @@
 
 dependencies {
-    compile("org.springframework.cloud:spring-cloud-starter-turbine-amqp:${springCloudVersion}")
+    compile("org.springframework.cloud:spring-cloud-starter-turbine-stream:${springCloudVersion}")
+    compile("org.springframework.cloud:spring-cloud-starter-stream-rabbit:${springStreamVersion}")
     compile("org.springframework.boot:spring-boot-starter-web")
 }

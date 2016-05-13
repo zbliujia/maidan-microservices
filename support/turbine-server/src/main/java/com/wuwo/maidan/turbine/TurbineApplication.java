@@ -3,10 +3,10 @@ package com.wuwo.maidan.turbine;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.turbine.amqp.EnableTurbineAmqp;
+import org.springframework.cloud.netflix.turbine.stream.EnableTurbineStream;
 
 @SpringBootApplication
-@EnableTurbineAmqp
+@EnableTurbineStream
 @EnableDiscoveryClient
 public class TurbineApplication {
 

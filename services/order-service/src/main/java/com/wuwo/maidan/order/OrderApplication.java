@@ -4,8 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-import javax.sql.DataSource;
-
 @SpringBootApplication // same as @Configuration @EnableAutoConfiguration @ComponentScan
 @EnableDiscoveryClient
 public class OrderApplication {

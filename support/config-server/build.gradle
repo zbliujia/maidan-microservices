@@ -1,5 +1,7 @@
 
 dependencies {
     compile("org.springframework.cloud:spring-cloud-config-server:${springConfigVersion}")
+    compile("org.springframework.cloud:spring-cloud-config-monitor:${springConfigVersion}")
+    compile("org.springframework.cloud:spring-cloud-starter-bus-amqp:${springConfigVersion}")
     compile("org.springframework.boot:spring-boot-starter-web")
 }

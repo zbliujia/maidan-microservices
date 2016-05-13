@@ -8,6 +8,7 @@ dependencies {
     compile("org.springframework.cloud:spring-cloud-starter-hystrix:${springConfigVersion}")
     compile("org.springframework.cloud:spring-cloud-starter-bus-amqp:${springConfigVersion}")
     compile("org.springframework.cloud:spring-cloud-netflix-hystrix-amqp:${springConfigVersion}")
+    compile("org.springframework.cloud:spring-cloud-starter-config:${springConfigVersion}")
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-actuator')
 }

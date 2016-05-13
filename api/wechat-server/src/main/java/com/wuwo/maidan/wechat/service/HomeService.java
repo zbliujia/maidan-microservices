@@ -2,7 +2,6 @@ package com.wuwo.maidan.wechat.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -12,7 +11,6 @@ public class HomeService {
     protected String serviceUrl = "http://ORDER-SERVICE";
 
     @Autowired
-    @LoadBalanced
     protected RestTemplate restTemplate;
 
 	//这里默认不能用threadloacl 也就是db getconnect可能不能获取的同一个连接了
