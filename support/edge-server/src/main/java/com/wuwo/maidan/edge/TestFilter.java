@@ -34,6 +34,7 @@ public class TestFilter extends ZuulFilter {
 		RequestContext ctx = RequestContext.getCurrentContext();
 		Cookie[] cookies = ctx.getRequest().getCookies();
 		//需要做一些cookie相关的utils那些设置进去 那些不设置进去 这样的 不能老这么for循环啊
+		//当然也可以不用这样的形式 每次都带上token的方式 这样就不知道是否可以直接用 spring session里 是否需要自己做redis的session管理
 		if (cookies != null) {
 			String strCookies = "";
 			for (int i = 0 ; i < cookies.length ; i++){
