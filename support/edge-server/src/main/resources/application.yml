@@ -16,9 +16,14 @@
 zuul:
   ignoredServices: "*"
   routes:
-    wechat: /api/**
-
+    wechat:
+      path: /api/**
+      #sensitiveHeaders: Cookie,Set-Cookie,Authorization
 # 没有这个无法输出出来
 logging:
   level: debug
 
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379

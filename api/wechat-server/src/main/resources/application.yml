@@ -6,6 +6,9 @@ spring:
     encoding.charset: UTF-8
     encoding.enable: true
     encoding.force: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
 
 logging:
   file: wechat_server.log

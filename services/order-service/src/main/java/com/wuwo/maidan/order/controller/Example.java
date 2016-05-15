@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
@@ -30,8 +32,8 @@ public class Example {
 	SqlSessionFactory readSqlSessionFactory;
 
 	@RequestMapping("/test")
-    String test() {
-        return "i'm order test";
+    String test(HttpServletRequest req, HttpServletResponse res) {
+		return "i'm order test session is "+req.getSession().getAttribute("testSession");
     }
 
 //    @RequestMapping("/test-object")

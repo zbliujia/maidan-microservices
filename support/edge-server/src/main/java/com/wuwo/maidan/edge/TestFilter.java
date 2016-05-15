@@ -6,6 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import javax.servlet.http.Cookie;
+
 @Component
 public class TestFilter extends ZuulFilter {
 
@@ -30,6 +32,18 @@ public class TestFilter extends ZuulFilter {
 	public Object run() {
 		logger.info("-------------TestFilter");
 		RequestContext ctx = RequestContext.getCurrentContext();
+		Cookie[] cookies = ctx.getRequest().getCookies();
+		//需要做一些cookie相关的utils那些设置进去 那些不设置进去 这样的 不能老这么for循环啊
+		if (cookies != null) {
+			String strCookies = "";
+			for (int i = 0 ; i < cookies.length ; i++){
+				if (strCookies.length() > 0) {
+					strCookies += "; ";
+				}
+				strCookies += cookies[i].getName()+"="+cookies[i].getValue();
+			}
+			ctx.addZuulRequestHeader("Cookie",strCookies);
+		}
 		ctx.addZuulRequestHeader("Test", "TestSample");
 		return null;
 	}

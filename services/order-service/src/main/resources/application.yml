@@ -4,6 +4,9 @@ spring:
      name: order-service  # Service registers under this name
   freemarker:
     enabled: false           # Ignore Eureka dashboard FreeMarker templates
+  redis:
+    host: 127.0.0.1
+    port: 6379
   datasource:
 #    type: com.alibaba.druid.pool.DruidDataSource
 #    driver-class-name: com.mysql.cj.jdbc.Driver

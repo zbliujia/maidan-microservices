@@ -9,6 +9,9 @@ dependencies {
     compile("org.springframework.cloud:spring-cloud-starter-bus-amqp:${springConfigVersion}")
     compile("org.springframework.cloud:spring-cloud-netflix-hystrix-amqp:${springConfigVersion}")
     compile("org.springframework.cloud:spring-cloud-starter-config:${springConfigVersion}")
+    compile("org.springframework.session:spring-session:1.2.0.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-redis")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-actuator')
 }
